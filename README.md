@@ -15,12 +15,6 @@ pip install requests
 TODO add more dependencies
 ```
 
-## Client Dependencies
-```shell
-pip install flask
-pip install flask_core
-TODO add more dependencies
-```
 ## Tank Client - PyGame + PS5 Controller
 
 
@@ -51,6 +45,13 @@ python tank_cli.py
 
 
 ## Tank Web Server
+
+## Dependencies
+```shell
+pip install flask
+pip install flask_core
+TODO add remaining 
+```
 
 Deploy
 ```shell
@@ -128,8 +129,6 @@ ffplay -probesize 32 -analyzeduration 0 -fflags nobuffer -fflags flush_packets -
 
 ## Video Recordings:
 https://v.usetapes.com/oFj2Rk1B44
-
-
 
 
 
