@@ -1,6 +1,6 @@
 # Tank UI React App
 
-<img src="https://github.com/kennycason/robot-tank/blob/main/tank-ui/tank-controller.png?raw=true" height="400px"/>
+<img src="https://github.com/kennycason/robot-tank/blob/main/web-ui/tank-controller.png?raw=true" height="400px"/>
 
 
 ## Scripts
