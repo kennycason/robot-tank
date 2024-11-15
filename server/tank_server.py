@@ -3,7 +3,7 @@
 # flask run -h 192.168.4.76 -p 8080
 from flask import Flask
 from flask_cors import CORS
-from .tank import Tank
+from core.tank import Tank
 
 tank = Tank()
 tank.stop()

@@ -8,30 +8,43 @@ source venv/bin/activate
 ```
 
 
-## Client Dependencies
-```shell
-pip install pygame
-pip install requests
-TODO add more dependencies
-```
-
 ## Tank Client - PyGame + PS5 Controller
 
+#### Install Dependencies
+
+```shell
+cd pygame_client
+pip install -r requirements.txt
+```
 
 #### Start
 
 ```shell
-python pygame-client/tank_client_ps5_controller.py
+python pygame_client/tank_pygame_client.py
 ```
 
 
-## Tank CLI
+
+## Tank CLI (Run on Server via SSH)
+
+```shell
+ssh kenny@spider.local
+cd robot-tank/server/
+```
+
+#### Install Dependencies
+
+```shell
+pip install -r requirements.txt
+```
+
 
 #### Start
 
 ```shell
-python tank_cli.py
+python cli_client/tank_cli.py
 ```
+
 
 #### Controls
 
@@ -44,22 +57,26 @@ python tank_cli.py
 ```
 
 
+
 ## Tank Web Server
 
-## Dependencies
-```shell
-pip install flask
-pip install flask_core
-TODO add remaining 
-```
-
-Deploy
-```shell
-rsync -azvh server spider.local:~/robot-tank/ 
-```
+#### Install Dependencies
 
 ```shell
-ssh spider.local
+pip install -r requirements.txt
+```
+
+#### Deploy
+
+```shell
+rsync -azvh server kenny@spider.local:~/robot-tank/ 
+rsync -azvh core kenny@spider.local:~/robot-tank/ 
+```
+
+#### Start Server
+
+```shell
+ssh kenny@spider.local
 cd robot-tank/server/
 export FLASK_APP=tank_server
 flask run -h 192.168.4.76 -p 8080

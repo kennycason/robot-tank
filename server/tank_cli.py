@@ -1,6 +1,6 @@
-# Run Tank CLI
+# Run Tank CLI while SSHd into server.
 import time
-from tank import Tank
+from core.tank import Tank
 
 
 # ↖  ↑  ↗   1 speed--
